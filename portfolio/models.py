@@ -6,7 +6,8 @@ class Project(models.Model):
     description = models.TextField(verbose_name="Descripción") # Campo de caracteres muy grande
     image = models.ImageField(verbose_name="Imagen",upload_to="projects")
     created = models.DateTimeField(auto_now_add=True, verbose_name="Fecha de Creación") # now_add se ejecuta al INS
-    updated = models.DateTimeField(auto_now=True, verbose_name="FEcha de Actualización") # now se ejecuta en el UPD
+    updated = models.DateTimeField(auto_now=True, verbose_name="Fecha de Actualización") # now se ejecuta en el UPD
+    link = models.URLField(null=True, blank=True, verbose_name="Link del Proyecto")
 
     class Meta:
         verbose_name = "proyecto"

@@ -1,3 +1,5 @@
 {
-    "python.pythonPath": "/home/cmorales/miniconda3/envs/webpersonal/bin/python"
+    "python.pythonPath": "/home/cmorales/miniconda3/envs/webpersonal/bin/python",
+    "json.schemas": [
+    ]
 }
